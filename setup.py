@@ -13,5 +13,8 @@ if __name__ == '__main__':
         py_modules=['flask_beanstalk'],
         zip_safe=False,
         platforms='any',
-        install_requires=open('requirements.txt').readlines(),
+        install_requires=['gevent', 'flask', 'pyyaml'],
+        dependency_links=[
+            "git+https://github.com/dvska/beanstalkc.git#egg=beanstalkc"
+        ]
     )

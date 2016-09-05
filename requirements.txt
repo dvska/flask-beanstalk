@@ -1,5 +1,0 @@
-# python 3.x
-gevent
-flask
--e git+https://github.com/dvska/beanstalkc#egg=beanstalkc
-pyyaml
