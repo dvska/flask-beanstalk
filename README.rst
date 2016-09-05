@@ -1,6 +1,6 @@
-===============
-Flask-Beanstalk
-===============
+================================
+Flask-Beanstalk, py3k generation
+================================
 
 .. image:: http://img.shields.io/pypi/v/Flask-Beanstalk.png
 
@@ -64,16 +64,16 @@ Install and run ``beanstalkd`` if you haven't done so yet.
 
 ::
 
-  git clone https://github.com/marksteve/flask-beanstalk.git
+  git clone https://github.com/dvska/flask-beanstalk.git
   cd flask-beanstalk
-  mkvirtualenv flask-beanstalk
-  workon flask-beanstalk
+  virtualenv --system-site-packages -p /usr/local/bin/python3.5 ../venv3
+  source ../venv3/bin activate
   python setup.py develop
   python example_worker.py
 
 On another terminal::
 
-  workon flask-beanstalk
+  source ../venv3/bin activate
   python example.py
 
 Go to localhost:5000 in your browser to send a job.
